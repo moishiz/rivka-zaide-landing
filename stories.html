@@ -7,7 +7,7 @@
   <meta name="description" content="עשרות אלפי ישראלים כבר נפרדו מהאקנה במעבדות רבקה זיידה. סיפורי הצלחה של מטופלים מכל הארץ — כולל כאלה שוויתרו על רואקוטן.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,18 +22,21 @@
     </div>
   </div>
 </nav>
+<div class="spectrum" aria-hidden="true"></div>
 
 <!-- הוק -->
 <header class="hero">
-  <div class="container hero-content">
-    <span class="kicker">+80,000 סיפורי הצלחה</span>
-    <h1>הם היו בטוחים שכלום כבר לא יעזור.<br><span class="highlight">ואז הם הגיעו לבני ברק.</span></h1>
-    <p class="lead">
-      מחיפה, מבאר שבע, מירושלים ומאילת — אלה הסיפורים של אנשים אמיתיים שעשו את הנסיעה,
-      <strong>ויצאו עם עור חדש וביטחון שלא היה להם שנים.</strong>
-    </p>
-    <div class="hero-ctas">
-      <a href="index.html#form" class="btn btn-pink">אני רוצה להיות הסיפור הבא ←</a>
+  <div class="container">
+    <div class="hero-content" style="max-width:760px;">
+      <span class="kicker kicker--pink">+80,000 סיפורי הצלחה</span>
+      <h1>הם היו בטוחים שכלום כבר לא יעזור.<br><span class="highlight">ואז הם הגיעו לבני ברק.</span></h1>
+      <p class="lead" style="max-width:none;">
+        מחיפה, מבאר שבע, מירושלים ומאילת — אלה הסיפורים של אנשים אמיתיים שעשו את הנסיעה,
+        <strong>ויצאו עם עור חדש וביטחון שלא היה להם שנים.</strong>
+      </p>
+      <div class="hero-ctas">
+        <a href="index.html#form" class="btn btn-pink">אני רוצה להיות הסיפור הבא ←</a>
+      </div>
     </div>
   </div>
 </header>
@@ -41,51 +44,84 @@
 <!-- לפני / אחרי -->
 <section class="section">
   <div class="container">
-    <span class="kicker">לפני / אחרי</span>
-    <h2>התוצאות מדברות. אנחנו רק מצלמים.</h2>
-    <p style="max-width:640px;">תמונות של מטופלים אמיתיים, כפי שפורסמו באתר ובאישורם. ללא פילטרים וללא עריכה.</p>
+    <span class="kicker reveal">לפני / אחרי</span>
+    <h2 class="reveal">התוצאות מדברות. אתם רק גוררים.</h2>
+    <p class="reveal" style="max-width:640px;">תמונות של מטופלים אמיתיים, כפי שפורסמו באתר ובאישורם. ללא פילטרים וללא עריכה — גררו את הידית והשוו בעצמכם.</p>
     <div class="ba-grid">
-      <div class="img-card">
-        <img src="images/ba-1.jpg" alt="נועה — לפני ואחרי טיפול אקנה במעבדות רבקה זיידה">
-        <div class="ba-caption"><strong>נועה</strong> · מימין: לפני · משמאל: אחרי הטיפול</div>
+      <div class="ba-frame reveal">
+        <div class="ba-slider" data-ba style="--pos:50%">
+          <div class="ba-layer ba-before" style="background-image:url('images/ba-1.jpg')"></div>
+          <div class="ba-layer ba-after" style="background-image:url('images/ba-1.jpg')"></div>
+          <div class="ba-divider" aria-hidden="true"></div>
+          <div class="ba-grip" aria-hidden="true">⇄</div>
+          <span class="ba-tag ba-tag--before" aria-hidden="true">לפני</span>
+          <span class="ba-tag ba-tag--after" aria-hidden="true">אחרי</span>
+          <input class="ba-range" type="range" min="8" max="92" value="50" aria-label="השוואת לפני ואחרי — נועה">
+        </div>
+        <div class="ba-caption"><strong>נועה</strong> · לפני ואחרי הטיפול</div>
       </div>
-      <div class="img-card">
-        <img src="images/ba-2.jpg" alt="נתנאל — לפני ואחרי טיפול אקנה במעבדות רבקה זיידה">
-        <div class="ba-caption"><strong>נתנאל</strong> · מימין: לפני · משמאל: אחרי הטיפול</div>
+      <div class="ba-frame reveal">
+        <div class="ba-slider" data-ba style="--pos:50%">
+          <div class="ba-layer ba-before" style="background-image:url('images/ba-2.jpg')"></div>
+          <div class="ba-layer ba-after" style="background-image:url('images/ba-2.jpg')"></div>
+          <div class="ba-divider" aria-hidden="true"></div>
+          <div class="ba-grip" aria-hidden="true">⇄</div>
+          <span class="ba-tag ba-tag--before" aria-hidden="true">לפני</span>
+          <span class="ba-tag ba-tag--after" aria-hidden="true">אחרי</span>
+          <input class="ba-range" type="range" min="8" max="92" value="50" aria-label="השוואת לפני ואחרי — נתנאל">
+        </div>
+        <div class="ba-caption"><strong>נתנאל</strong> · לפני ואחרי הטיפול</div>
       </div>
-      <div class="img-card">
-        <img src="images/ba-4.jpg" alt="תהילה — לפני ואחרי טיפול אקנה במעבדות רבקה זיידה">
-        <div class="ba-caption"><strong>תהילה</strong> · מימין: לפני · משמאל: אחרי הטיפול</div>
+      <div class="ba-frame reveal">
+        <div class="ba-slider" data-ba style="--pos:50%">
+          <div class="ba-layer ba-before" style="background-image:url('images/ba-4.jpg')"></div>
+          <div class="ba-layer ba-after" style="background-image:url('images/ba-4.jpg')"></div>
+          <div class="ba-divider" aria-hidden="true"></div>
+          <div class="ba-grip" aria-hidden="true">⇄</div>
+          <span class="ba-tag ba-tag--before" aria-hidden="true">לפני</span>
+          <span class="ba-tag ba-tag--after" aria-hidden="true">אחרי</span>
+          <input class="ba-range" type="range" min="8" max="92" value="50" aria-label="השוואת לפני ואחרי — תהילה">
+        </div>
+        <div class="ba-caption"><strong>תהילה</strong> · לפני ואחרי הטיפול</div>
       </div>
-      <div class="img-card">
-        <img src="images/ba-3.jpg" alt="אופיר — לפני ואחרי טיפול אקנה במעבדות רבקה זיידה">
-        <div class="ba-caption"><strong>אופיר</strong> · מימין: לפני · משמאל: אחרי הטיפול</div>
+      <div class="ba-frame reveal">
+        <div class="ba-slider" data-ba style="--pos:50%">
+          <div class="ba-layer ba-before" style="background-image:url('images/ba-3.jpg')"></div>
+          <div class="ba-layer ba-after" style="background-image:url('images/ba-3.jpg')"></div>
+          <div class="ba-divider" aria-hidden="true"></div>
+          <div class="ba-grip" aria-hidden="true">⇄</div>
+          <span class="ba-tag ba-tag--before" aria-hidden="true">לפני</span>
+          <span class="ba-tag ba-tag--after" aria-hidden="true">אחרי</span>
+          <input class="ba-range" type="range" min="8" max="92" value="50" aria-label="השוואת לפני ואחרי — אופיר">
+        </div>
+        <div class="ba-caption"><strong>אופיר</strong> · לפני ואחרי הטיפול</div>
       </div>
     </div>
-    <p style="text-align:center; margin-top:24px;">
+    <p class="ba-hint reveal">👆 גררו את הידית לשני הכיוונים</p>
+    <p class="reveal" style="text-align:center; margin-top:16px;">
       <a href="https://rivkazaide.co.il/%d7%9c%d7%a4%d7%a0%d7%99-%d7%90%d7%97%d7%a8%d7%99/" class="btn btn-outline">לעשרות תוצאות נוספות באתר המלא ←</a>
     </p>
   </div>
 </section>
 
 <!-- סיפורים: במקום רואקוטן -->
-<section class="section section-light">
+<section class="section section--tint">
   <div class="container">
-    <span class="kicker">במקום רואקוטן</span>
-    <h2>הם עמדו להתחיל טיפול תרופתי. <span class="pink-text">ואז בדקו עוד דרך אחת.</span></h2>
+    <span class="kicker kicker--yellow reveal">במקום רואקוטן</span>
+    <h2 class="reveal">הם עמדו להתחיל טיפול תרופתי. ואז בדקו עוד דרך אחת.</h2>
     <!-- ⚠️ להחליף בעדויות אמיתיות ומאושרות -->
     <div class="testimonials">
-      <div class="testimonial">
+      <div class="testimonial reveal">
         <div class="stars">★★★★★</div>
         <blockquote>"רופא העור אמר שרואקוטן זה הצעד הבא. קראתי על תופעות הלוואי ופחדתי. באבחון אצל רבקה זיידה הסבירו לי בדיוק מה קורה בעור שלי — משהו שאף אחד לא טרח להסביר קודם. היום, [X חודשים] אחרי, העור נקי והמרשם מעולם לא מומש."</blockquote>
         <div class="who">[שם], [גיל]<span>הגיע/ה מ[עיר] · במקום רואקוטן</span></div>
       </div>
-      <div class="testimonial">
+      <div class="testimonial reveal">
         <div class="stars">★★★★★</div>
         <blockquote>"הבת שלי בת ה-15 בכתה כל בוקר מול המראה. הרופאה הציעה רואקוטן ואני לא הייתי שלמה עם זה בגיל שלה. הנסיעה מ[עיר] נשמעה מפחידה — בפועל, זה היה הדבר הכי משתלם שעשינו. הילדה חזרה לחייך."</blockquote>
         <div class="who">[שם], אמא של מטופלת<span>הגיעו מ[עיר] · אקנה נעורים</span></div>
       </div>
-      <div class="testimonial">
+      <div class="testimonial reveal">
         <div class="stars">★★★★★</div>
         <blockquote>"עשיתי בעבר קורס רואקוטן והאקנה חזרה אחרי שנתיים. לא רציתי לעבור את זה שוב. אצל רבקה זיידה קיבלתי תוכנית שמטפלת גם באקנה וגם בצלקות שנשארו — סוף סוף מישהו שרואה את התמונה המלאה."</blockquote>
         <div class="who">[שם], [גיל]<span>הגיע/ה מ[עיר] · אחרי רואקוטן שלא החזיק</span></div>
@@ -97,67 +133,66 @@
 <!-- סיפורים: שווה את הנסיעה -->
 <section class="section">
   <div class="container">
-    <span class="kicker">שווה את הנסיעה</span>
-    <h2>"רחוק לי לבני ברק" — אמרו כולם. עד שהגיעו.</h2>
+    <span class="kicker reveal">שווה את הנסיעה</span>
+    <h2 class="reveal">"רחוק לי לבני ברק" — אמרו כולם. עד שהגיעו.</h2>
     <!-- ⚠️ להחליף בעדויות אמיתיות ומאושרות -->
     <div class="testimonials">
-      <div class="testimonial">
+      <div class="testimonial reveal">
         <div class="stars">★★★★★</div>
         <blockquote>"שעה וחצי נסיעה מחיפה. חשבתי שאני משוגעת. אבל אחרי 6 שנים של קוסמטיקאיות בצפון שלא עזרו — הבנתי ששעה וחצי לטיפול שעובד זה כלום לעומת עוד שנה של פצעים. התוכנית שלי נבנתה כך שאני מגיעה רק כשבאמת צריך."</blockquote>
         <div class="who">[שם], [גיל]<span>חיפה</span></div>
       </div>
-      <div class="testimonial">
+      <div class="testimonial reveal">
         <div class="stars">★★★★★</div>
         <blockquote>"מבאר שבע לבני ברק זה לא קרוב. אבל את רוב העבודה עושים התכשירים בבית — הביקורים במרכז הם רק חלק מהתהליך. בדיעבד, על כל נסיעה קיבלתי החזר בביטחון העצמי."</blockquote>
         <div class="who">[שם], [גיל]<span>באר שבע</span></div>
       </div>
-      <div class="testimonial">
+      <div class="testimonial reveal">
         <div class="stars">★★★★★</div>
         <blockquote>"אין בירושלים, אין ברחובות, אין בשום מקום את המכשור והמעבדה שיש להם. זה כמו לשאול למה טסים לרופא הכי טוב — כי יש רק אחד. חניה נוחה בבניין, והצוות תמיד מתאם לי תור בשעה שנוחה לנסיעה."</blockquote>
         <div class="who">[שם], [גיל]<span>ירושלים</span></div>
       </div>
     </div>
-    <div class="distance-box" style="text-align:center;">
+    <div class="ink-box reveal" style="text-align:center;">
       <h3>המספר שחשוב באמת</h3>
       <p style="font-size:1.15rem; margin-top:10px;">
         זה לא מספר הקילומטרים לבני ברק — זה מספר הבקרים שנשארו לכם להתעורר עם אקנה.<br>
-        <strong style="color:var(--white);">באבחון החינם תדעו בדיוק כמה ביקורים תצטרכו, בהתאם לחומרת האקנה ולמרחק שלכם.</strong>
+        <strong>באבחון החינם תדעו בדיוק כמה ביקורים תצטרכו, בהתאם לחומרת האקנה ולמרחק שלכם.</strong>
       </p>
-      <a href="index.html#form" class="btn btn-yellow" style="margin-top:20px;">לבדוק כמה ביקורים אני צריך/ה — חינם ←</a>
+      <a href="index.html#form" class="btn btn-yellow" style="margin-top:22px;">לבדוק כמה ביקורים אני צריך/ה — חינם ←</a>
     </div>
   </div>
 </section>
 
 <!-- קהילה והוכחות נוספות -->
-<section class="section section-light">
-  <div class="container" style="max-width:820px; text-align:center;">
-    <span class="kicker">לא מאמינים לנו? מצוין.</span>
-    <h2>תבדקו אותנו בעצמכם</h2>
-    <p style="margin-top:12px;">
+<section class="section section--tint">
+  <div class="container final-cta" style="max-width:820px;">
+    <span class="kicker reveal">לא מאמינים לנו? מצוין.</span>
+    <h2 class="reveal">תבדקו אותנו בעצמכם</h2>
+    <p class="lead reveal" style="margin-top:12px;">
       הצטרפו לקהילת הפייסבוק שלנו <strong>"אקנה זה לא כזה סיפור"</strong> — שם תמצאו אלפי מטופלים אמיתיים,
       שאלות גלויות ותשובות בלי פילטרים. או פשוט חפשו "רבקה זיידה" בגוגל ותקראו ביקורות.
     </p>
-    <p style="margin-top:20px;">
+    <div class="cta-row reveal">
       <a href="https://www.instagram.com/rivka_zaide/" class="btn btn-outline">אינסטגרם @rivka_zaide</a>
-      &nbsp;
       <a href="https://rivkazaide.co.il/" class="btn btn-outline">האתר המלא שלנו</a>
-    </p>
+    </div>
   </div>
 </section>
 
 <!-- CTA סופי -->
 <section class="section final-cta">
   <div class="container">
-    <h2>הסיפור הבא בעמוד הזה<br><span class="pink-text">יכול להיות שלכם.</span></h2>
-    <p>אבחון מקצועי חינם · ללא התחייבות · תוכנית ומחיר מדויקים לפני שמחליטים</p>
-    <p style="margin-top:24px;">
+    <h2 class="reveal">הסיפור הבא בעמוד הזה<br>יכול להיות שלכם.</h2>
+    <p class="lead reveal">אבחון מקצועי חינם · ללא התחייבות · תוכנית ומחיר מדויקים לפני שמחליטים</p>
+    <div class="cta-row reveal">
       <a href="index.html#form" class="btn btn-pink">קבעו לי אבחון חינם ←</a>
-      &nbsp;
       <a href="https://wa.me/97237764414?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%90%D7%91%D7%97%D7%95%D7%9F%20%D7%97%D7%99%D7%A0%D7%9D" class="btn btn-whatsapp">💬 וואטסאפ</a>
-    </p>
+    </div>
   </div>
 </section>
 
+<div class="spectrum" aria-hidden="true"></div>
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -185,6 +220,11 @@
 </footer>
 
 <a class="wa-float" href="https://wa.me/97237764414?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%90%D7%91%D7%97%D7%95%D7%9F%20%D7%97%D7%99%D7%A0%D7%9D" aria-label="וואטסאפ">💬</a>
+<div class="mobile-cta">
+  <a href="index.html#form" class="btn btn-pink">אבחון חינם</a>
+  <a href="tel:0778038377" class="btn btn-outline">📞 חייגו</a>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>

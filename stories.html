@@ -18,7 +18,7 @@
     <div class="nav-links">
       <a href="index.html">דף הבית</a>
       <a href="roaccutane.html">רואקוטן או הדרך הטבעית?</a>
-      <a href="index.html#form" class="btn btn-pink nav-cta">אבחון חינם</a>
+      <a href="#form" class="btn btn-pink nav-cta">אבחון חינם</a>
     </div>
   </div>
 </nav>
@@ -35,7 +35,7 @@
         <strong>ויצאו עם עור חדש וביטחון שלא היה להם שנים.</strong>
       </p>
       <div class="hero-ctas">
-        <a href="index.html#form" class="btn btn-pink">אני רוצה להיות הסיפור הבא ←</a>
+        <a href="#form" class="btn btn-pink">אני רוצה להיות הסיפור הבא ←</a>
       </div>
     </div>
   </div>
@@ -159,7 +159,7 @@
         זה לא מספר הקילומטרים לבני ברק — זה מספר הבקרים שנשארו לכם להתעורר עם אקנה.<br>
         <strong>באבחון החינם תדעו בדיוק כמה ביקורים תצטרכו, בהתאם לחומרת האקנה ולמרחק שלכם.</strong>
       </p>
-      <a href="index.html#form" class="btn btn-yellow" style="margin-top:22px;">לבדוק כמה ביקורים אני צריך/ה — חינם ←</a>
+      <a href="#form" class="btn btn-yellow" style="margin-top:22px;">לבדוק כמה ביקורים אני צריך/ה — חינם ←</a>
     </div>
   </div>
 </section>
@@ -180,13 +180,33 @@
   </div>
 </section>
 
-<!-- CTA סופי -->
-<section class="section final-cta">
+<!-- טופס המרה -->
+<section class="section final-cta" id="form">
   <div class="container">
+    <span class="kicker kicker--pink reveal">הסיפור הבא — שלכם</span>
     <h2 class="reveal">הסיפור הבא בעמוד הזה<br>יכול להיות שלכם.</h2>
     <p class="lead reveal">אבחון מקצועי חינם · ללא התחייבות · תוכנית ומחיר מדויקים לפני שמחליטים</p>
-    <div class="cta-row reveal">
-      <a href="index.html#form" class="btn btn-pink">קבעו לי אבחון חינם ←</a>
+    <form class="form-wrap reveal" id="leadForm">
+      <span class="form-stamp" aria-hidden="true">0 ₪</span>
+      <label for="name">שם מלא</label>
+      <input type="text" id="name" name="name" required placeholder="ישראל ישראלי" autocomplete="name">
+      <label for="phone">טלפון נייד</label>
+      <input type="tel" id="phone" name="phone" required placeholder="050-0000000" pattern="[0-9\-+ ]{9,15}" autocomplete="tel">
+      <label for="severity">מה הכי מתאר את המצב?</label>
+      <select id="severity" name="severity">
+        <option>אקנה פעילה — פנים</option>
+        <option>אקנה פעילה — גב / חזה / גוף</option>
+        <option>צלקות וסימני פוסט-אקנה</option>
+        <option>מתלבט/ת לגבי רואקוטן</option>
+        <option>אקנה אצל הילד/ה שלי</option>
+      </select>
+      <label for="city">עיר מגורים <span class="opt">(כדי שנתאים לכם תוכנית ביקורים)</span></label>
+      <input type="text" id="city" name="city" placeholder="למשל: חיפה">
+      <button type="submit" class="btn btn-pink btn-block">קבעו לי אבחון חינם ←</button>
+      <p class="form-note">🔒 הפרטים ישמשו לתיאום האבחון בלבד. לא ספאם. מבטיחים.</p>
+    </form>
+    <div class="cta-row reveal" style="margin-top:26px;">
+      <a href="tel:0778038377" class="btn btn-outline">📞 077-803-8377</a>
       <a href="https://wa.me/97237764414?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%90%D7%91%D7%97%D7%95%D7%9F%20%D7%97%D7%99%D7%A0%D7%9D" class="btn btn-whatsapp">💬 וואטסאפ</a>
     </div>
   </div>
@@ -221,7 +241,7 @@
 
 <a class="wa-float" href="https://wa.me/97237764414?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%90%D7%91%D7%97%D7%95%D7%9F%20%D7%97%D7%99%D7%A0%D7%9D" aria-label="וואטסאפ">💬</a>
 <div class="mobile-cta">
-  <a href="index.html#form" class="btn btn-pink">אבחון חינם</a>
+  <a href="#form" class="btn btn-pink">אבחון חינם</a>
   <a href="tel:0778038377" class="btn btn-outline">📞 חייגו</a>
 </div>
 
